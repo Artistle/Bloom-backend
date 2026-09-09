@@ -1,22 +1,20 @@
 plugins {
-    kotlin("jvm") version "2.2.21"
+    kotlin("jvm") version "2.2.10"
 }
 
 group = "com.artistle"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    gradlePluginPortal()
     mavenCentral()
+    google()
 }
 
-dependencies {
-    testImplementation(kotlin("test"))
-}
-
-kotlin {
-    jvmToolchain(21)
-}
-
-tasks.test {
-    useJUnitPlatform()
+allprojects {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        google()
+    }
 }
