@@ -19,11 +19,5 @@ internal fun DependencyHandler.runtimeOnly(notation: Any): Dependency? =
 internal fun DependencyHandler.annotationProcessor(notation: Any): Dependency? =
     this.add("annotationProcessor", notation)
 
-internal fun DependencyHandler.debugImplementation(notation: Any): Dependency? =
-    add("debugImplementation", notation)
-
 internal fun DependencyHandler.testImplementation(notation: Any): Dependency? =
     add("testImplementation", notation)
-
-internal fun DependencyHandler.androidTestImplementation(notation: Any): Dependency? =
-    add("androidTestImplementation", notation)
