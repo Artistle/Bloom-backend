@@ -13,3 +13,4 @@ plugins {
 rootProject.name = "bloom"
 
 include("app")
+include("controllers")

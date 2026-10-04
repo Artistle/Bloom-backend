@@ -37,6 +37,8 @@ kotlin-allopen-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-allopen
 kotlin-noarg-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-noarg", version.ref = "kotlin" }
 spring-boot-gradle-plugin = { group = "org.springframework.boot", name = "spring-boot-gradle-plugin", version.ref = "springBoot" }
 
+jackson-module-kotlin = { group = "tools.jackson.module", name = "jackson-module-kotlin" }
+
 [bundles]
 security = [
     "spring-boot-starter-security",

@@ -11,6 +11,7 @@ internal object Aliases {
         const val SPRING_SECURITY_TEST = "spring-security-test"
         const val KOTLIN_REFLECT = "kotlin-reflect"
         const val POSTGRESQL = "postgresql"
+        const val JACKSON_KOTLIN = "jackson-module-kotlin"
     }
 
     object Bundle {

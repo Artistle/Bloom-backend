@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bloom
+  mvc:
+    problemdetails:
+      enabled: true

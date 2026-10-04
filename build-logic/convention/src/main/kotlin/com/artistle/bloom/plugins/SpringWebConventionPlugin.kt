@@ -16,6 +16,7 @@ class SpringWebConventionPlugin : Plugin<Project> {
         dependencies {
             implementation(libs.library(Aliases.Lib.SPRING_BOOT_STARTER_WEB))
             implementation(libs.library(Aliases.Lib.SPRING_BOOT_STARTER_VALIDATION))
+            implementation(libs.library(Aliases.Lib.JACKSON_KOTLIN))
         }
     }
 }
