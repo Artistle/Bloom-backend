@@ -39,6 +39,9 @@ spring-boot-gradle-plugin = { group = "org.springframework.boot", name = "spring
 
 jackson-module-kotlin = { group = "tools.jackson.module", name = "jackson-module-kotlin" }
 
+kotlin-test-junit5 = { group = "org.jetbrains.kotlin", name = "kotlin-test-junit5", version.ref = "kotlin" }
+junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+
 [bundles]
 security = [
     "spring-boot-starter-security",

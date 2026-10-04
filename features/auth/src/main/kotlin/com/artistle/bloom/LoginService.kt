@@ -2,18 +2,17 @@ package com.artistle.bloom
 
 import com.artistle.bloom.auth.DeliveryChannel
 import com.artistle.bloom.auth.LoginStart
-import con.artistle.bloom.LoginService
 import org.springframework.stereotype.Service
 import java.time.Clock
 import java.time.Duration
-import java.util.UUID
+import java.util.*
 
 @Service
-class LoginServiceImpl(
+class LoginService(
     private val clock: Clock,
-) : LoginService {
+) {
 
-    override fun start(identifier: String): LoginStart {
+    fun start(identifier: String): LoginStart {
 
         return LoginStart(
             transactionId = UUID.randomUUID(),

@@ -4,6 +4,6 @@ plugins {
 
 dependencies {
 
-    implementation(project(":services:auth:auth-api"))
     implementation(project(":entities:web-entities"))
+    implementation(project(":entities:domain-entities"))
 }

@@ -4,7 +4,5 @@ plugins {
 
 dependencies {
 
-    implementation(project(":controllers"))
-    implementation(project(":services:auth:auth-api"))
-    implementation(project(":services:auth:auth-impl"))
+    implementation(project(":features:auth"))
 }

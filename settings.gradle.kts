@@ -13,10 +13,13 @@ plugins {
 rootProject.name = "bloom"
 
 include("app")
-include("controllers")
-include("services")
-include("services:auth")
+//include("controllers")
+//include("services")
+//include("services:auth")
 include("entities")
 include("entities:web-entities")
-include("services:auth:auth-api")
-include("services:auth:auth-impl")
+//include("services:auth:auth-api")
+//include("services:auth:auth-impl")
+include("entities:domain-entities")
+include("features")
+include("features:auth")

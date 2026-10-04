@@ -12,6 +12,9 @@ internal object Aliases {
         const val KOTLIN_REFLECT = "kotlin-reflect"
         const val POSTGRESQL = "postgresql"
         const val JACKSON_KOTLIN = "jackson-module-kotlin"
+        const val SPRING_BOOT_STARTER_TEST = "spring-boot-starter-test"
+        const val KOTLIN_TEST_JUNIT5 = "kotlin-test-junit5"
+        const val JUNIT_PLATFORM_LAUNCHER = "junit-platform-launcher"
     }
 
     object Bundle {

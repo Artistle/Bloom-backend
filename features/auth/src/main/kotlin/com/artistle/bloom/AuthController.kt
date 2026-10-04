@@ -1,8 +1,7 @@
-package com.artistle.bloom.controllers
+package com.artistle.bloom
 
 import com.artistle.bloom.auth.StartLoginRequest
 import com.artistle.bloom.auth.StartLoginResponse
-import con.artistle.bloom.LoginService
 import jakarta.validation.Valid
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
