@@ -2,6 +2,7 @@ package com.artistle.bloom
 
 import com.artistle.bloom.auth.DeliveryChannel
 import com.artistle.bloom.auth.LoginStart
+import com.artistle.bloom.identifiers.EmailAddress
 import org.springframework.stereotype.Service
 import java.time.Clock
 import java.time.Duration
@@ -12,7 +13,7 @@ class LoginService(
     private val clock: Clock,
 ) {
 
-    fun start(identifier: String): LoginStart {
+    fun start(email: EmailAddress): LoginStart {
 
         return LoginStart(
             transactionId = UUID.randomUUID(),

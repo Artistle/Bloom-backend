@@ -21,3 +21,6 @@ internal fun DependencyHandler.annotationProcessor(notation: Any): Dependency? =
 
 internal fun DependencyHandler.testImplementation(notation: Any): Dependency? =
     add("testImplementation", notation)
+
+internal fun DependencyHandler.testRuntimeOnly(notation: Any): Dependency? =
+    add("testRuntimeOnly", notation)

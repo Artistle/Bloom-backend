@@ -2,6 +2,8 @@ package com.artistle.bloom
 
 import com.artistle.bloom.auth.StartLoginRequest
 import com.artistle.bloom.auth.StartLoginResponse
+import com.artistle.bloom.exceptions.InvalidIdentifierException
+import com.artistle.bloom.identifiers.EmailAddress
 import jakarta.validation.Valid
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -16,7 +18,11 @@ class AuthController(
 
     @PostMapping
     fun start(@Valid @RequestBody request: StartLoginRequest): StartLoginResponse {
-        val result = loginService.start(request.identifier)
+        val email = EmailAddress.parseOrNull(request.identifier)
+            ?: throw InvalidIdentifierException()
+
+        val result = loginService.start(email)
+
         return StartLoginResponse(
             transactionId = result.transactionId,
             channel = result.channel,
